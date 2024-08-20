@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* Estilo geral do formulário */
+form {
+    background-color: #000; /* Fundo preto */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #fff; /* Texto branco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #007bff; /* Bordas azuis */
+    border-radius: 5px;
+    background-color: #111; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+textarea {
+    height: 100px;
+    resize: vertical;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00aaff; /* Azul claro ao focar */
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="submit"] {
+    background-color: #007bff; /* Fundo azul */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"]:hover {
+    background-color: #005bb5; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Adiciona espaço entre os inputs */
+input,
+textarea {
+    margin-bottom: 15px;
 }
